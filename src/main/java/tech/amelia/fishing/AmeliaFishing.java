@@ -10,13 +10,14 @@ import tech.amelia.fishing.reward.manager.RewardManager;
 @Getter
 public final class AmeliaFishing extends JavaPlugin {
 
-    public static AmeliaFishing PLUGIN;
+    public  AmeliaFishing plugin;
+
     private ConfigRegistry configRegistry;
     private RewardManager rewardManager;
 
     @Override
     public void onEnable() {
-        AmeliaFishing.PLUGIN = this;
+        this.plugin = this;
 
         this.loadConfiguration();
         this.loadRewards();

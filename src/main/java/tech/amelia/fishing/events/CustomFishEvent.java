@@ -1,13 +1,13 @@
 package tech.amelia.fishing.events;
 
 import lombok.Data;
-import lombok.Getter;
+import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import tech.amelia.fishing.reward.FishingReward;
 
 @Data
-public final class CustomFishEvent extends Event {
+public final class CustomFishEvent extends Event implements Cancellable {
 
     private static final HandlerList HANDLERS = new HandlerList();
     private final FishingReward reward;
