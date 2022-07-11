@@ -1,6 +1,7 @@
 package tech.amelia.fishing.config;
 
 import lombok.Data;
+import org.bukkit.plugin.java.JavaPlugin;
 import tech.amelia.fishing.AmeliaFishing;
 
 import java.io.File;
@@ -8,12 +9,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-public final class ConfigRegistry<T extends AmeliaFishing> {
+public final class ConfigRegistry {
 
-    private final T plugin;
     private final static Map<String, YMLConfig> CACHED_CONFIGS = new HashMap<>();
+    private final JavaPlugin plugin;
 
-    public ConfigRegistry(final T plugin) {
+    public ConfigRegistry(final JavaPlugin plugin) {
         this.plugin = plugin;
     }
 

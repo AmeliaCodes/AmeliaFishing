@@ -11,7 +11,7 @@ import tech.amelia.fishing.reward.manager.RewardManager;
 public final class AmeliaFishing extends JavaPlugin {
 
     public static AmeliaFishing PLUGIN;
-    private ConfigRegistry<AmeliaFishing> configRegistry;
+    private ConfigRegistry configRegistry;
     private RewardManager rewardManager;
 
     @Override
@@ -24,7 +24,7 @@ public final class AmeliaFishing extends JavaPlugin {
     }
 
     private void loadConfiguration() {
-        this.configRegistry = new ConfigRegistry<>(this);
+        this.configRegistry = new ConfigRegistry(this);
 
         this.configRegistry.registerConfig("settings");
     }
