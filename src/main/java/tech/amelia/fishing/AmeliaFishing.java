@@ -1,9 +1,9 @@
 package tech.amelia.fishing;
 
 import lombok.Data;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.amelia.fishing.config.ConfigRegistry;
+import tech.amelia.fishing.listener.FishListener;
 import tech.amelia.fishing.reward.manager.RewardManager;
 
 @Data
@@ -19,6 +19,7 @@ public final class AmeliaFishing extends JavaPlugin {
 
         this.loadConfiguration();
         this.loadRewards();
+        this.loadListeners();
     }
 
     private void loadConfiguration() {
@@ -29,5 +30,9 @@ public final class AmeliaFishing extends JavaPlugin {
 
     private void loadRewards() {
         this.rewardManager = new RewardManager();
+    }
+
+    private void loadListeners() {
+        new FishListener(this);
     }
 }
