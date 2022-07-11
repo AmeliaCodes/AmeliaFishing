@@ -1,0 +1,36 @@
+####################### AmeliaFishing - 2022 #######################
+## Developer: Amelia
+## Contributors: N/A
+## Depends: N/A
+####################################################################
+
+Permissions:
+  Reward: "ameliafishing.rewards"
+
+Reward-Chance: 50.0 # Chance for rewards to be given &d&lAmelia&5&lSets &8&m» &d
+
+Rewards:
+  "DIAMOND":
+    Chance: 10.0
+    Commands:
+      - "give %player% diamond 1"
+    Message:
+      Enabled: true
+      Value:
+        - "&5&l[&d&l!&5&l] &dYou have found a &5diamond &dwhile fishing!"
+  "EMERALD":
+    Chance: 50.0
+    Commands:
+      - "give %player% emerald 1"
+    Message:
+      Enabled: true
+      Value:
+        - "&5&l[&d&l!&5&l] &dYou have found a &5emerald &dwhile fishing!"
+  "IRON":
+    Chance: 50.0
+    Commands:
+      - "give %player% iron_ingot 1"
+    Message:
+      Enabled: true
+      Value:
+        - "&5&l[&d&l!&5&l] &dYou have found a &5iron ingot &dwhile fishing!"

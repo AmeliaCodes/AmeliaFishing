@@ -1,0 +1,5 @@
+name: AmeliaFishing
+version: '${project.version}'
+main: tech.amelia.fishing.AmeliaFishing
+authors: [ Amelia ]
+description: Implements Fishing Rewards into Minecraft!
