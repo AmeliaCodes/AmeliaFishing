@@ -1,12 +1,13 @@
 package tech.amelia.fishing;
 
 import lombok.Data;
+import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 import tech.amelia.fishing.config.ConfigRegistry;
 import tech.amelia.fishing.listener.FishListener;
 import tech.amelia.fishing.reward.manager.RewardManager;
 
-@Data
+@Getter
 public final class AmeliaFishing extends JavaPlugin {
 
     public static AmeliaFishing PLUGIN;
