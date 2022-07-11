@@ -5,7 +5,7 @@ import org.bukkit.ChatColor;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ColorUtil {
+public final class ColorUtil {
 
     public static String colorize(final String line) {
         return ChatColor.translateAlternateColorCodes('&', line);

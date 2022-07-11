@@ -8,7 +8,7 @@ import tech.amelia.fishing.utils.ColorUtil;
 import java.util.List;
 
 @Data
-public class Message {
+public final class Message {
 
     private final boolean enabled;
     private final List<String> values;
